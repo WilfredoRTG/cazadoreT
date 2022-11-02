@@ -1,0 +1,247 @@
+:root{
+    --primary-color: #6B9CE5;
+    --secondary-color: #2B4366;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: inter;
+}
+
+.container-principal{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-principal h1{
+    font-weight: 400;
+}
+
+.container-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-top: 60px;
+}
+
+.main-boxes{
+    width: 250px;
+    height: 250px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 1px 1px 7px black;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+
+.container-boxes a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-boxes:hover{
+    background-color: var(--secondary-color);
+}
+
+/* Navbar */
+
+nav {
+    position: sticky;
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+.first-element{
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav li{
+    display: flex;
+    padding: 0 10px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-nav{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    padding: 0px 40px;
+}
+
+.item-nav:hover{
+    background-color: var(--secondary-color);
+}
+
+
+.second-item{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 8vh;
+}
+
+
+/* Lateral Nav */
+
+.lateral-nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.lateral-nav a{
+    text-decoration: none;
+}
+
+.lateral-nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    box-shadow: 1px 1px 7px black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.lateral-nav-item:hover{
+    
+    background-color: var(--secondary-color);
+
+}
+
+.selected{
+    background-color: var(--secondary-color);
+}
+
+/* Form classes */
+
+.form-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-alta{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 50%;
+}
+
+.wrapper-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper-input label{
+    margin-bottom: 5px;
+}
+
+.wrapper-input input{
+    border-radius: 5px;
+    border: 0.2px solid var(--secondary-color);
+    height: 35px;
+    padding: 0px 10px;
+}
+
+.wrapper-input textarea{
+    resize: none;
+    border: 0.2px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.button-container{
+    grid-column: 1/ span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container button{
+    padding: 20px 30px;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+}
+
+.button-container button:hover{
+    background-color: var(--secondary-color);
+}
+
+
+/* End form classes */
+
+/* Search bar */
+
+.search-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px
+}
+
+.search-container input{
+    width: 40%;
+    height: 30px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.search-container img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
