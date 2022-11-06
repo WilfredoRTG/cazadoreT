@@ -12,10 +12,12 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap"
 			rel="stylesheet"
 		/>
-		<title>Cazador</title>
+		<title>Alta cazador</title>
 	</head>
 
 	<body>
+		<!-- Navbar -->
+
 		<nav>
 			<ul>
 				<div class="first-element">
@@ -36,21 +38,40 @@
 			</ul>
 		</nav>
 
-		<div class="container-principal">
-			<div class="selection-boxes-container">
-				<a href="altaCazador.html">
-					<div class="selection-boxes">Dar de alta cazador</div>
-				</a>
-				<a href="bajasCazador.html">
-					<div class="selection-boxes">Eliminar cazador</div>
-				</a>
-				<a href="modificarCazador.html">
-					<div class="selection-boxes">Modificar un cazador</div>
-				</a>
-				<a href="consultarCazador.html">
-					<div class="selection-boxes">Consultar cazadores</div>
-				</a>
-			</div>
+		<!-- End of Navbar -->
+
+		<!-- Lateral nav -->
+
+		<div class="lateral-nav">
+			<a href="altaCazador.html">
+				<div class="lateral-nav-item">Altas</div>
+			</a>
+
+			<a href="bajasCazador.html">
+				<div class="lateral-nav-item">Bajas</div>
+			</a>
+
+			<a href="modificarCazador.html">
+				<div class="lateral-nav-item">Cambios</div>
+			</a>
+
+			<a href="consultarCazador.html">
+				<div class="selected lateral-nav-item">Consultas</div>
+			</a>
+
+			<a href="crearProyecto.html">
+				<div class="lateral-nav-item">Crear proyecto</div>
+			</a>
 		</div>
+
+		<!-- End of lateral nav -->
+
+		<!-- main content -->
+
+		<div class="search-container">
+            <input placeholder="Buscar..." type="text">
+            <img src="../../assets/search.png" alt="">
+        </div>
+
 	</body>
 </html>
