@@ -1,0 +1,29 @@
+<nav>
+	<ul>
+		<div class="first-element">
+			<a class="item-nav" href="/">
+				<li>
+					<img class="home-icon" src="../../assets/home.png" />
+				</li>
+			</a>
+		</div>
+		<div class="second-item">
+			<% if(cazador) {%>
+
+                <a class="selected item-nav" href="cazador">
+                    <li>Cazador</li>
+                </a>
+                <a class="item-nav" href="proveedor">
+                    <li>Proveedor</li>
+                </a>
+			<%}else{%>
+                <a class="item-nav" href="cazador">
+                    <li>Cazador</li>
+                </a>
+                <a class="selected item-nav" href="proveedor">
+                    <li>Proveedor</li>
+                </a>
+			<%}%>
+		</div>
+	</ul>
+</nav>

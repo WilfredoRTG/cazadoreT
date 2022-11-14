@@ -1,8 +1,10 @@
 import express from "express";
-import {getCazador} from "../controllers/cazador.js";
+import {getCazador, altaCazador} from "../controllers/cazador.js";
 
 const cazadorRouter = express.Router();
 
 cazadorRouter.get('/', getCazador)
+cazadorRouter.get('/altas', altaCazador)
+cazadorRouter.get('/bajas', altaCazador)
 
 export default cazadorRouter;

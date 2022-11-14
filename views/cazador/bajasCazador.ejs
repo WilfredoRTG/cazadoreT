@@ -1,8 +1,7 @@
-<%- include('../partials/header') %>
+<%- include('../components/partials/header') %>
 
-<%- include('../components/navbar') %>
-<%- include('../components/leftbar') %>
-
+<%- include('../components/navbar/navbar', {cazador: true}) %>
+<%- include('../components/leftbar/leftbar') %>
 <!-- main content -->
 
 <div class="search-container">
@@ -10,4 +9,4 @@
     <img src="../../assets/search.png" alt="">
 </div>
 
-<%- include('../partials/footer') %>
+<%- include('../components/partials/footer') %>

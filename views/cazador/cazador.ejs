@@ -1,13 +1,13 @@
-<%- include('../partials/header') %>
+<%- include('../components/partials/header') %>
 
-<%- include('../components/navbar') %>
+<%- include('../components/navbar/navbar', {cazador:true}) %>
 
 <div class="container-principal">
     <div class="selection-boxes-container">
-        <a href="cazador/altaCazador">
+        <a href="cazador/altas">
             <div class="selection-boxes">Dar de alta cazador</div>
         </a>
-        <a href="bajasCazador.html">
+        <a href="cazador/bajas">
             <div class="selection-boxes">Eliminar cazador</div>
         </a>
         <a href="proveedor/proveedor.html">
@@ -19,5 +19,5 @@
     </div>
 </div>
 
-<%- include('../partials/footer') %>
+<%- include('../components/partials/footer') %>
         
