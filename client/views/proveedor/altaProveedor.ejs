@@ -1,8 +1,7 @@
-<%- include('../partials/header') %>
+<%- include('../components/partials/header') %>
 
-<%- include('../components/navbar', {cazador:false}) %>
-<%- include('../components/leftbar') %>
-
+<%- include('../components/navbar/navbar', {cazador:true}) %>
+<%- include('../components/leftbar/leftbar', {selected: 'altas', cazador: false}) %>
 
 <!-- main content -->
 
@@ -57,4 +56,4 @@
     </form>
 </div>
 
-<%- include('../partials/footer') %>
+<%- include('../components/partials/footer') %>

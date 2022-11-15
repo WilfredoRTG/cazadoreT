@@ -1,5 +1,8 @@
+import { db } from "../database/connection.js"
+
 export const getCazador = async (req, res) => {
     try {
+        console.log(db);
         res.status(200).render("cazador/cazador")
     } catch (error) {
         res.status(404).json({message: error.message})

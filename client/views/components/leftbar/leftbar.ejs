@@ -1,0 +1,45 @@
+<!-- Lateral nav -->
+
+<% if(cazador) {%>
+<div class="lateral-nav">
+    <a href="altas">
+        <div class="<%= selected==='altas' && 'selected' %> lateral-nav-item">Altas</div>
+    </a>
+
+    <a href="bajas">
+        <div class="<%= selected==='bajas' && 'selected' %> lateral-nav-item">Bajas</div>
+    </a>
+
+    <a href="cambios">
+        <div class="<%= selected==='cambios' && 'selected' %> lateral-nav-item">Cambios</div>
+    </a>
+
+    <a href="consultas">
+        <div class="<%= selected==='consultas' && 'selected' %> lateral-nav-item">Consultas</div>
+    </a>
+
+    <a href="crearproyecto">
+        <div class="<%= selected==='crearProyecto' && 'selected' %> lateral-nav-item">Crear proyecto</div>
+    </a>
+</div>
+
+<%}else{%>
+
+    <div class="lateral-nav">
+        <a href="altas">
+            <div class="<%= selected==='altas' && 'selected' %> lateral-nav-item">Altas</div>
+        </a>
+    
+        <a href="bajas">
+            <div class="<%= selected==='bajas' && 'selected' %> lateral-nav-item">Bajas</div>
+        </a>
+    
+        <a href="cambios">
+            <div class="<%= selected==='cambios' && 'selected' %> lateral-nav-item">Cambios</div>
+        </a>
+    
+        <a href="consultas">
+            <div class="<%= selected==='consultas' && 'selected' %> lateral-nav-item">Consultas</div>
+        </a>
+    </div>
+<%}%>
